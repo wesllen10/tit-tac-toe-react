@@ -1,0 +1,23 @@
+.square {
+  aspect-ratio: 1;
+  border: 1px solid rgba(255,255,255,.12);
+  border-radius: 17px;
+  background: rgba(255,255,255,.055);
+  color: #f8fafc;
+  font-size: clamp(2.5rem, 11vw, 4.5rem);
+  font-weight: 800;
+  cursor: pointer;
+  transition: transform .18s ease, background .18s ease, border-color .18s ease;
+}
+.square:hover:not(:disabled) {
+  transform: translateY(-2px);
+  background: rgba(255,255,255,.11);
+  border-color: rgba(129,140,248,.65);
+}
+.square-x { color: #8b9cff; }
+.square-o { color: #f6a6c8; }
+.square.winning {
+  background: rgba(52,211,153,.18);
+  border-color: #34d399;
+  box-shadow: 0 0 24px rgba(52,211,153,.16);
+}
